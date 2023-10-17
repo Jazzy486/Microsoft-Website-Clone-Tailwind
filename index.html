@@ -1,21 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css" class="css">
-    <link rel="icon" type="image/png" href="ms.ico"/>
+    <link rel="icon" type="image/png" href="ms.ico" />
     <title>Microsoft - Official Home Page</title>
 </head>
+
 <body>
     <div class="navbar flex justify-between items-center p-4">
-        <div class="flex justify-center items-center">
-            <div class="hamburger inline-block p-4 cursor-pointer">
+        <div class="flex justify-center items-center md:order-2">
+            <div class="hamburger inline-block p-4 cursor-pointer md:hidden">
                 <div class="line h-0.5 w-6 my-1 bg-black"></div>
                 <div class="line h-0.5 w-6 my-1 bg-black"></div>
                 <div class="line h-0.5 w-6 my-1 bg-black"></div>
             </div>
+
+            <div class="search md:hidden">Search</div>
+        </div>
+
+        <div class="logo text-center md:order-1 flex">
+            <div>Microsoft</div>
+            
+            <div class="features absolute md:static w-fit md:w-auto bg-gray-200 md:bg-white inset-0 -translate-x-96 md:translate-x-0 md:flex md:mx-4 md:space-x-2">
+                <div class="f-item">Microsoft 365</div>
+                <div class="f-item">Office</div>
+                <div class="f-item">Windows</div>
+                <div class="f-item">Support</div>
+            </div>
+
+        </div>
+
+        <div class="flex md:order-3">
+            <div class="cart text-center">Cart</div>
+            <div class="search hidden md:block">Search</div>
         </div>
     </div>
+
+    <div class="slider"></div>
 </body>
+
 </html>
