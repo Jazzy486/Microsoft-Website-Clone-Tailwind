@@ -10,6 +10,7 @@
 </head>
 
 <body>
+    <div class="parent-container md:mx-4">
     <div class="navbar flex justify-between items-center p-4">
         <div class="flex justify-center items-center md:order-2">
             <div class="hamburger inline-block p-4 cursor-pointer md:hidden">
@@ -22,7 +23,7 @@
         </div>
 
         <div class="logo text-center md:order-1 flex">
-            <div>Microsoft</div>
+            <div><img class="w-32" src="ms.png" alt=""></div>
             
             <div class="features absolute md:static w-fit md:w-auto bg-gray-200 md:bg-white inset-0 -translate-x-96 md:translate-x-0 md:flex md:mx-4 md:space-x-2">
                 <div class="f-item">Microsoft 365</div>
@@ -39,15 +40,21 @@
         </div>
     </div>
 
-    <div class="slider bg-[#c3e3fc] flex flex-col-reverse">
-        <div class="left">
+    <div class="slider md:bg-[#c3e3fc] flex flex-col-reverse md:flex-row pb-10 md:pb-0">
+        <div class="left flex flex-col justify-center mx-6 md:items-baseline py-12 md:py-0">
             <h1 class="text-4xl">Microsoft 365</h1>
-            <p class="description">Turn your ideas into reality, stay safer online and off, and focus on what matters most with Microsoft 365 apps</p>
+            <p class="description my-2">Turn your ideas into reality, stay safer online and off, and focus on what matters most with Microsoft 365 apps</p>
+            <div class="buy-links flex items-center space-x-6 text-[#0067b8] font-medium">
+                <button class="text-white bg-[#0067b8] px-4 py-2 font-bold w-40 my-4">For one person</button>
+                <a href="">For upto six people ></a>
+            </div>
         </div>
+
         <div class="right">
             <img src="365.jpg" alt="">
         </div>
     </div>
+</div>
 </body>
 
 </html>
